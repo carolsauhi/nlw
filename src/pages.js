@@ -26,7 +26,7 @@ module.exports = {
 
             return res.render('orphanage', { orphanage})
         } catch (error) {
-            console.log(err);
+            console.log(error);
             return res.send('Erro no Banco de Dados');
         }
         return res.render('orphanage')
